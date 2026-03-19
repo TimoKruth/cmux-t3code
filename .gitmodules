@@ -1,0 +1,8 @@
+[submodule "cmux"]
+	path = cmux
+	url = https://github.com/TimoKruth/cmux
+	branch = main
+[submodule "t3code"]
+	path = t3code
+	url = https://github.com/TimoKruth/t3code
+	branch = main
