@@ -1,13 +1,21 @@
 <h1 align="center">cmux + t3code</h1>
-<p align="center">A Ghostty-based macOS terminal with an integrated AI coding assistant</p>
+<p align="center">A proof-of-concept for integrating web-based AI tools into a native macOS terminal</p>
 
 <p align="center">
   <img src="./Project-sample.png" alt="cmux-t3code in action" width="900" />
 </p>
 
-## What is this?
+## Goals
 
-This superproject combines two open-source tools into a single app:
+This superproject has two goals:
+
+1. **Showcase how to integrate web-based tools into cmux.** The cmux side is modified to spawn a sidecar Node.js server per workspace and embed its UI in a native panel -- demonstrating the pattern for any web-based tool, not just t3code.
+
+2. **Adopt t3code's project-workspace model into cmux.** t3code organizes work around projects with per-project threads and state. This PoC brings that concept into cmux as first-class "task" workspaces -- each with its own chat panel, project directory, and isolated t3code instance -- while keeping t3code itself essentially unmodified.
+
+The design principle: adjust t3code as little as possible (ideally zero changes) and do all the integration work on the cmux side.
+
+## What is what?
 
 - **[cmux](https://github.com/manaflow-ai/cmux)** -- A macOS terminal built on Ghostty with vertical tabs, split panes, notification rings, and an in-app browser. Designed for running multiple AI coding agents side by side.
 - **[t3code](https://github.com/pingdotgg/t3code)** -- A minimal web GUI for coding agents (Claude, Codex, and more). Provides a chat interface for interacting with AI assistants in the context of your project.
