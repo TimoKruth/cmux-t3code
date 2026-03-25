@@ -2,7 +2,7 @@
 <p align="center">A proof-of-concept for integrating web-based AI tools into a native macOS terminal</p>
 
 <p align="center">
-  <img src="./Project-sample.png" alt="cmux-t3code in action" width="900" />
+  <img src="./docs/assets/Project-sample.png" alt="cmux-t3code in action" width="900" />
 </p>
 
 ## Goals
